@@ -7,7 +7,7 @@ import Image from "next/image";
 const products = [
   { id: "1", name: "Product 1", image: "/images/laptop.jpg", link: "https://amazon.com/product1" },
   { id: "2", name: "Product 2", image: "/images/smart-phone.jpg", link: "https://amazon.com/product2" },
-  { id: "3", name: "Product 3", image: "https://via.placeholder.com/300", link: "https://amazon.com/product3" },
+  { id: "3", name: "Product 3", image: "/images/headphones.jpg", link: "https://amazon.com/product3" },
 ];
 
 export default function ProductPage() {

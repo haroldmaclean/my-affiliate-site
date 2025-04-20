@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "name": "Smartwatch X200",
+    "price": 99.99,
+    "image": "/images/smartwatch-x200.jpg",
+    "alt": "Smartwatch X200",
+    "rating": 4.7,
+    "featured": true,
+    "link": "https://example.com/smart-watch",
+    "description": "A sleek and powerful smartwatch with fitness tracking and message alerts.",
+    "note": "I use this to track my steps and check messages without pulling out my phone."
+  },
+  {
+    "id": 2,
+    "name": "Noise Cancelling Headphones",
+    "price": 149.99,
+    "image": "/images/noise-cancelling-headphones.jpg",
+    "alt": "Noise Cancelling Headphones",
+    "rating": 4.2,
+    "featured": true,
+    "link": "https://example.com/head-phones",
+    "description": "Comfortable headphones that block outside noise for immersive sound.",
+    "note": "Perfect for staying focused while working or relaxing with music."
+  },
+  {
+    "id": 3,
+    "name": "Portable Bluetooth Speaker",
+    "price": 79.99,
+    "image": "/images/portable-bluetooth-speaker.jpg",
+    "alt": "Portable Bluetooth Speaker",
+    "rating": 4.8,
+    "featured": true,
+    "link": "https://example.com/portable-bluetooth-speaker",
+    "description": "Compact speaker with rich sound and long battery life.",
+    "note": "I carry this on outdoor trips — the sound quality is surprisingly good."
+  },
+  {
+    "id": 4,
+    "name": "Wireless Charging Pad",
+    "price": 29.99,
+    "image": "/images/wireless-charging-pad.jpg",
+    "alt": "Wireless Charging Pad",
+    "rating": 3.9,
+    "description": "A convenient pad for wire-free charging of compatible devices.",
+    "note": "Sits on my desk and charges my phone effortlessly every day."
+  },
+  {
+    "id": 5,
+    "name": "Smart Home Assistant",
+    "price": 59.99,
+    "image": "/images/smart-home-assistant.jpg",
+    "alt": "Smart Home Assistant",
+    "rating": 4.5,
+    "description": "Voice-controlled assistant for managing tasks, music, and smart devices.",
+    "note": "Great for reminders, news updates, and playing music hands-free."
+  },
+  {
+    "id": 6,
+    "name": "Fitness Tracker Band",
+    "price": 45.99,
+    "image": "/images/fitness-tracker-band.jpg",
+    "alt": "Fitness Tracker Band",
+    "rating": 4.0,
+    "description": "Lightweight tracker for monitoring daily activity and heart rate.",
+    "note": "Helps me stay on track with my fitness goals every day."
+  },
+  {
+    "id": 7,
+    "name": "Compact Drone",
+    "price": 199.99,
+    "image": "/images/compact-drone.jpg",
+    "alt": "Compact Drone",
+    "rating": 4.6,
+    "description": "Portable drone with HD camera and stable flight controls.",
+    "note": "Amazing for capturing aerial shots on hikes and travels."
+  },
+  {
+    "id": 8,
+    "name": "Wireless Earbuds Pro",
+    "price": 129.99,
+    "image": "/images/wireless-earbuds-pro.jpg",
+    "alt": "Wireless Earbuds Pro",
+    "rating": 4.3,
+    "description": "True wireless earbuds with active noise cancellation and touch controls.",
+    "note": "I use these for workouts and video calls — super clear sound."
+  },
+  {
+    "id": 9,
+    "name": "4K Action Camera",
+    "price": 89.99,
+    "image": "/images/4k-action-camera.jpg",
+    "alt": "4K Action Camera",
+    "rating": 4.1,
+    "description": "Rugged camera that records in 4K — great for sports and adventures.",
+    "note": "I use this to capture moments while biking or hiking."
+  },
+  {
+    "id": 10,
+    "name": "Gaming Mouse RGB",
+    "price": 39.99,
+    "image": "/images/gaming-mouse-rgb.jpg",
+    "alt": "Gaming Mouse RGB",
+    "rating": 3.8,
+    "description": "Responsive gaming mouse with customizable RGB lighting.",
+    "note": "Love the feel — it's responsive and looks cool on my desk setup."
+  }
+]
