@@ -69,7 +69,7 @@ export default function Home() {
                     style={{ objectFit: "cover" }}
                   />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{gadget.title}</h3>
+                <h3 className="text-xl font-bold mb-2">{gadget.name}</h3>
                 <p className="text-gray-600 text-sm mb-2">{gadget.description}</p>
                 <div className="text-green-600 font-bold mb-2">{gadget.price}</div>
                 <p className="text-gray-500 italic text-sm mb-3">{gadget.note}</p>

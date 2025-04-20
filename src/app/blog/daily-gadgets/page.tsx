@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+
 import gadgets from "@data/gadgets.json";
 
 export default function DailyGadgetsPage() {
