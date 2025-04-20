@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -14,12 +15,10 @@ export default function DailyGadgetsPage() {
     gadget.name?.toLowerCase().includes(query.toLowerCase())
   );
 
-  // Up to 3 featured gadgets
   const featuredGadgets = filteredGadgets
     .filter((gadget) => gadget.featured)
     .slice(0, 3);
 
-  // Prevent duplication in regular gadgets
   const featuredIds = featuredGadgets.map((g) => g.id);
 
   const regularGadgets = filteredGadgets.filter(
@@ -47,7 +46,6 @@ export default function DailyGadgetsPage() {
           Daily Use Gadgets I Can’t Live Without
         </h1>
 
-        {/* 🔍 Search Bar */}
         <div className="mb-6">
           <input
             type="text"
@@ -58,7 +56,6 @@ export default function DailyGadgetsPage() {
           />
         </div>
 
-        {/* 📸 Banner Image */}
         <div className="relative w-full h-64 rounded-lg overflow-hidden mb-6 shadow-lg">
           <Image
             src="/images/daily-gadgets-banner.jpg"
@@ -130,14 +127,23 @@ export default function DailyGadgetsPage() {
                     </p>
                   )}
 
-                  <a
-                    href={`${gadget.link}?tag=yourtag-20`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
-                  >
-                    View Product
-                  </a>
+                  <div className="flex gap-3">
+                    <Link
+                      href={`/blog/daily-gadgets/${gadget.slug}`}
+                      className="inline-block bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors duration-300"
+                    >
+                      View Details
+                    </Link>
+
+                    <a
+                      href={`${gadget.link}?tag=yourtag-20`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                    >
+                      Buy Now
+                    </a>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -189,14 +195,23 @@ export default function DailyGadgetsPage() {
                 </p>
               )}
 
-              <a
-                href={`${gadget.link}?tag=yourtag-20`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
-              >
-                View Product
-              </a>
+              <div className="flex gap-3">
+                <Link
+                  href={`/blog/daily-gadgets/${gadget.slug}`}
+                  className="inline-block bg-gray-200 text-gray-800 text-sm font-medium px-4 py-2 rounded-lg hover:bg-gray-300 transition-colors duration-300"
+                >
+                  View Details
+                </Link>
+
+                <a
+                  href={`${gadget.link}?tag=yourtag-20`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                >
+                  Buy Now
+                </a>
+              </div>
             </motion.div>
           ))}
         </section>

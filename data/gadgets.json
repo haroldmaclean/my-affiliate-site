@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Smartwatch X200",
+    "slug": "smartwatch-x200",
     "price": "99.99",
     "image": "/images/smartwatch-x200.jpg",
     "alt": "Smartwatch X200",
@@ -14,6 +15,7 @@
   {
     "id": 2,
     "name": "Noise Cancelling Headphones",
+    "slug": "noise-cancelling-headphones",
     "price": "149.99",
     "image": "/images/noise-cancelling-headphones.jpg",
     "alt": "Noise Cancelling Headphones",
@@ -26,6 +28,7 @@
   {
     "id": 3,
     "name": "Portable Bluetooth Speaker",
+    "slug": "portable-bluetooth-speaker",
     "price": "79.99",
     "image": "/images/portable-bluetooth-speaker.jpg",
     "alt": "Portable Bluetooth Speaker",
@@ -38,6 +41,7 @@
   {
     "id": 4,
     "name": "Wireless Charging Pad",
+    "slug": "wireless-charging-pad",
     "price": "29.99",
     "image": "/images/wireless-charging-pad.jpg",
     "alt": "Wireless Charging Pad",
@@ -48,6 +52,7 @@
   {
     "id": 5,
     "name": "Smart Home Assistant",
+    "slug": "smart-home-assistant",
     "price": "59.99",
     "image": "/images/smart-home-assistant.jpg",
     "alt": "Smart Home Assistant",
@@ -58,6 +63,7 @@
   {
     "id": 6,
     "name": "Fitness Tracker Band",
+    "slug": "fitness-tracker-band",
     "price": "45.99",
     "image": "/images/fitness-tracker-band.jpg",
     "alt": "Fitness Tracker Band",
@@ -68,6 +74,7 @@
   {
     "id": 7,
     "name": "Compact Drone",
+    "slug": "compact-drone",
     "price": "199.99",
     "image": "/images/compact-drone.jpg",
     "alt": "Compact Drone",
@@ -78,6 +85,7 @@
   {
     "id": 8,
     "name": "Wireless Earbuds Pro",
+    "slug": "wireless-earbuds-pro",
     "price": "129.99",
     "image": "/images/wireless-earbuds-pro.jpg",
     "alt": "Wireless Earbuds Pro",
@@ -88,6 +96,7 @@
   {
     "id": 9,
     "name": "4K Action Camera",
+    "slug": "4k-action-camera",
     "price": "89.99",
     "image": "/images/4k-action-camera.jpg",
     "alt": "4K Action Camera",
@@ -98,6 +107,7 @@
   {
     "id": 10,
     "name": "Gaming Mouse RGB",
+    "slug": "gaming-mouse-rgb",
     "price": "39.99",
     "image": "/images/gaming-mouse-rgb.jpg",
     "alt": "Gaming Mouse RGB",
