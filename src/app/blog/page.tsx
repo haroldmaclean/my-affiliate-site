@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+// ✅ Metadata block - used directly in this file, so it's valid
 export const metadata: Metadata = {
   title: "Tech Deals & Reviews - Blog",
   description: "Explore tech tips, product reviews, and affiliate insights.",

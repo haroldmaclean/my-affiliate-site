@@ -98,7 +98,7 @@ export default function DailyGadgetsPage() {
                   <div className="rounded-lg mb-3 overflow-hidden w-full h-40 shadow-sm relative">
                     <Image
                       src={gadget.image}
-                      alt={gadget.alt || gadget.title}
+                      alt={gadget.alt || gadget.name}
                       fill
                       style={{ objectFit: "cover" }}
                       sizes="(max-width: 768px) 100vw, 300px"
@@ -106,7 +106,7 @@ export default function DailyGadgetsPage() {
                   </div>
 
                   <h2 className="text-xl font-semibold mb-2 text-gray-800">
-                    {gadget.title}
+                    {gadget.name}
                   </h2>
                   <p className="text-gray-600 mb-3">{gadget.description}</p>
 
@@ -157,7 +157,7 @@ export default function DailyGadgetsPage() {
               <div className="rounded-lg mb-3 overflow-hidden w-full h-40 shadow-sm relative">
                 <Image
                   src={gadget.image}
-                  alt={gadget.alt || gadget.title}
+                  alt={gadget.alt || gadget.name}
                   fill
                   style={{ objectFit: "cover" }}
                   sizes="(max-width: 768px) 100vw, 300px"
@@ -165,7 +165,7 @@ export default function DailyGadgetsPage() {
               </div>
 
               <h2 className="text-xl font-semibold mb-2 text-gray-800">
-                {gadget.title}
+                {gadget.name}
               </h2>
               <p className="text-gray-600 mb-3">{gadget.description}</p>
 
