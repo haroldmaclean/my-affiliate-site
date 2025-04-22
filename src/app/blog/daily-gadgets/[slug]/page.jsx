@@ -1,44 +1,50 @@
 import Image from "next/image";
-import { GetStaticPaths, GetStaticProps } from "next";
-import gadgets from "@/data/gadgets.json";
+import rawGadgets from "@/data/gadgets.json";
 
-// TypeScript types
-type Gadget = {
-  slug: string;
-  name: string;
-  description: string;
-  image: string;
-  alt?: string;
-  note?: string;
-  price: string;
-  rating: number;
-  link: string;
-};
+const gadgets = rawGadgets;
 
-// Static paths generation
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = gadgets.map((gadget) => ({
-    params: { slug: gadget.slug },
+// Static Params
+export async function generateStaticParams() {
+  return gadgets.map((gadget) => ({
+    slug: gadget.slug,
   }));
+}
 
-  return { paths, fallback: false }; // fallback: false means a 404 page will be shown for non-existent slugs
-};
-
-// Static props generation for a single gadget
-export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const gadget = gadgets.find((g) => g.slug === params?.slug);
+// SEO Metadata
+export async function generateMetadata({ params }) {
+  const gadget = gadgets.find((g) => g.slug === params.slug);
 
   if (!gadget) {
-    return { notFound: true };
+    return {
+      title: "Gadget Not Found",
+      description: "This gadget could not be found.",
+    };
   }
 
   return {
-    props: { gadget },
+    title: `${gadget.name} | Daily Tech Gadgets`,
+    description: gadget.description,
+    openGraph: {
+      title: gadget.name,
+      description: gadget.description,
+      images: [
+        {
+          url: gadget.image,
+          alt: gadget.alt || gadget.name,
+        },
+      ],
+    },
   };
-};
+}
 
-// Main Component
-const GadgetDetailPage = ({ gadget }: { gadget: Gadget }) => {
+// Page Component
+export default function GadgetDetailPage({ params }) {
+  const gadget = gadgets.find((g) => g.slug === params.slug);
+
+  if (!gadget) {
+    return <div className="p-6 text-center">Gadget not found</div>;
+  }
+
   return (
     <main className="max-w-3xl mx-auto p-6 font-sans">
       <h1 className="text-3xl font-bold mb-4">{gadget.name}</h1>
@@ -77,6 +83,4 @@ const GadgetDetailPage = ({ gadget }: { gadget: Gadget }) => {
       </a>
     </main>
   );
-};
-
-export default GadgetDetailPage;
+}

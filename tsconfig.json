@@ -13,16 +13,17 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "baseUrl": "./src",                   // ✅ ADD THIS LINE
+    "paths": {
+      "@/*": ["./*"],
+      "@data/*": ["data/*"]              // ✅ simplified since baseUrl is ./src
+    },
     "plugins": [
       {
         "name": "next"
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"],
-      "@data/*": ["./data/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/blog/daily-gadgets/[slug]/page.jsx"],
   "exclude": ["node_modules"]
 }
