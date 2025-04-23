@@ -12,6 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Best Affiliate Deals | My Website</title>
+        <meta name="google-site-verification" content="m0LzAooHMyAW2Nned3Ei29c6j4JKMZI1fE3CH2MstoI" />
         <meta name="description" content="Find the best affiliate deals here." />
         <meta property="og:title" content="Best Affiliate Deals" />
         <meta property="og:description" content="Exclusive discounts and offers!" />
